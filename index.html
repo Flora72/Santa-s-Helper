@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <title>Santa's Helper</title>
+</head>
+<body>
+<header class="header">
+    <h1>Santa's Helper</h1>
+    <nav class="navbar">
+        <ul class="regular-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#santas-friends">Santa's Friends</a></li>
+            <li><a href="#send-card">Send Card</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Santa's Gift Card Express</h2>
+        <p>Spread the holiday cheer by sending personalized gift cards!</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Santa's Helper, your go-to platform for spreading holiday joy and cheer! </p>
+        <p>At Santa's Helper, we believe in the magic of the holidays and the power of giving. Our mission is to help Santa reach out to all his friends and loved ones with personalized gift cards, making the season a bit brighter for everyone.</p>
+        <h3>Our Story</h3>
+        <p>Founded in the heart of the North Pole, Santa's Helper was created to bring a touch of modern magic to Santa's timeless tradition of gift-giving. With a team of dedicated elves and a sprinkle of holiday spirit, we ensure that each gift card is crafted with love and delivered with care.</p>
+        <h3>What We Do</h3>
+        <p>We make it easy for Santa to send gift cards to all the special people on his list. From designing custom messages to sending out the perfect holiday greetings, Santa's Helper is here to make the process seamless and joyous.</p>
+        <h3>Our Commitment</h3>
+        <ul>
+            <li><b>Spreading Joy</b>: We aim to bring smiles and happiness to all recipients.</li>
+            <li><b>Quality and Care</b>: Each gift card is thoughtfully created to ensure it delivers the perfect holiday cheer.</li>
+            <li><b>Ease of Use</b>: Our platform is designed to be user-friendly, making it easy for Santa to send gifts with just a few clicks.</li>
+        </ul>
+        <h3>Join Us</h3>
+        <p>Become part of our merry mission and help us spread the holiday magic far and wide. Whether you're sending a gift card to a loved one or simply want to get into the holiday spirit, Santa's Helper is here to make your season bright.</p>
+        <p>Thank you for visiting Santa's Helper, and may your holidays be filled with joy, love, and laughter! </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="santas-friends">
+        <h2>Santa's Friends</h2>
+        <ul id="recipientList">
+            <li>
+                <span>Florence - flo_rence@gmail.com</span>
+                <button class="send-card-button" data-name="Florence" data-email="flo_rence@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Mariposa - mariposa@gmail.com</span>
+                <button class="send-card-button" data-name="Mariposa" data-email="mariposa@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Perpetual - perps@gmail.com</span>
+                <button class="send-card-button" data-name="Perpetual" data-email="perps@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Marie - marie@gmail.com</span>
+                <button class="send-card-button" data-name="Marie" data-email="marie@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>John - john@gmail.com</span>
+                <button class="send-card-button" data-name="John" data-email="john@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Claude - claude@gmail.com</span>
+                <button class="send-card-button" data-name="Claude" data-email="claude@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Cherry - cherry@gmail.com</span>
+                <button class="send-card-button" data-name="Cherry" data-email="cherry@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Wise - wise@gmail.com</span>
+                <button class="send-card-button" data-name="Wise" data-email="wise@gmail.com">Send a Card</button>
+            </li>
+            <li>
+                <span>Aria - aria@gmail.com</span>
+                <button class="send-card-button" data-name="Aria" data-email="aria@gmail.com">Send a Card</button>
+            </li>
+        </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="send-card">
+        <h2>Send a Gift Card</h2>
+        <form id="giftCardForm">
+            <label for="name">Recipient's Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Recipient's Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Preview Gift Card</button>
+        </form>
+
+        <div class="preview-section">
+            <h2>Gift Card Preview</h2>
+            <div class="gift-card">
+                <p id="previewName"></p>
+                <p id="previewMessage"></p>
+            </div>
+            <button id="sendButton" style="display:none;">Send Gift Card</button>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: santashelper@hotmail.com</li>
+            <li>Phone: 1-800-SANTA</li>
+            <li>Address: Santa's Wonderland, North Pole</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Santa's Helper</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
